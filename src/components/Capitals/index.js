@@ -54,7 +54,7 @@ class Capitals extends Component {
         <div className="card-container">
           <h1>Countries And Capitals</h1>
           <div className="select-container">
-            <select onChange={this.changeCapital}>
+            <select onChange={this.changeCapital} value={filteredData.id}>
               {countryAndCapitalsList.map(eachCountry => (
                 <option key={eachCountry.id} value={eachCountry.id}>
                   {eachCountry.country}
